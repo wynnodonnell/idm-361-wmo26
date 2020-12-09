@@ -1,0 +1,114 @@
+body{
+    background: linear-gradient(45deg,#0015BC, #000A52, #00118F, #000A52, #00118F,#000A52);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+input{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 5rem;
+	width: 60%;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	font: bold 1.5rem cera;
+	color:white;
+	border-radius: 45%;
+    background: linear-gradient(45deg,#FF0000, #A30000, #660000, #A30000, #660000,#A30000);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+}
+header{
+	font: bold 2rem cera;	
+	text-align: center;
+	margin-top: 10px;
+	color:white;
+}
+#vote{
+	height: 3.5rem;
+	margin-top: 15%;
+	width: 50%;
+	background: linear-gradient(45deg,#9A2186, #871D75, #651558, #871D75, #651558,#871D75);
+	background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+}
+#space{
+	width: 70%;
+	height: 3px;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+}
+input:hover{
+	background-color:palevioletred;
+}
+#content{
+	width: 100%;
+	margin: auto;
+}
+/*
+#face{
+	width: 100%;
+	height: 600px;
+	background: url(img/tree1.svg) no-repeat fixed center;
+}
+*/
+#output{
+ 
+	text-align: center;
+	margin-top: 10px;
+}
+
+@media only screen and (orientation:landscape) {
+	body{
+		background: #E8A4D5 url(img/tree4.svg) no-repeat fixed center;
+	}
+	/*#face{
+		background-image: url(img/tree2.svg);
+		margin: auto;
+		height: 320px;
+	}*/
+	/*Images MUST be 80% of view for both portrait and landscape*/
+	#counter {
+		display: none !important; 
+	}
+#output {
+    background-color: orange;
+	text-align: center;
+
+}
+#space{
+	display: none;
+}
+input{
+	display: none;
+}
+}
+
+
+@media only screen and (orientation:portrait) {
+
+}
+#counter{
+	display: none;
+	text-align: left;
+	font: bold 1.5rem cera;	
+	margin: 0 auto;
+	margin-top: 10px;
+	color:white;
+	width: 65%;
+
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>BVoter</title>
+	<!-- META -->
+	<meta charset="utf-8">
+	<!-- no pinch and zoom, width is set to initial width-->
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0">
+	<!--Lets safari know that this page is web app capable on iOS Safari -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!--Make the status bar black-->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!--Sets the title of the app when added to home screen -->
+	<meta name="apple-mobile-web-app-title" content="BVoter">
+	<!--Disable Auto Phone Number Detection -->
+	<meta name="format-detection" content="telephone=no">
+	<!-- CSS -->
+	<link rel="stylesheet" href="css-normalize.css">
+    <link rel="stylesheet" href="css-add2home.css">
+    <link rel="stylesheet" href="css-main.css">
+	<link rel="apple-touch-icon" href="img/hourglassicon.png"
+</head>
+
+<body>
+	<!-- PAGE CONTENT -->
+	<div id="content">
+		<div id="face"></div>
+		<header>
+			BVOTER
+		</header>
+		<div id=buttons>
+			<input type="button" value="Option One" id="countButton1" />
+			<input type="button" value="Option Two" id="countButton2" />
+			<input type="button" value="Option Three" id="countButton3" />
+			<input type="button" value="Option Four" id="countButton4" />
+
+			<div id="space"></div>
+			<input type="button" id="vote" value="View Results"onclick="vote()">
+			<div id="counter">
+				<p>Option One got <span id="displayCount1">0</span> votes.</p>
+				<p>Option Two got <span id="displayCount2">0</span> votes.</p>
+				<p>Option Three got <span id="displayCount3">0</span> votes.</p>
+				<p>Option Four got <span id="displayCount4">0</span> votes.</p>
+			</div>
+		</div>
+	</div>
+	<!-- JAVASCRIPT-->
+	<script type="text/javascript">
+        // custom config settings before loading add2home.js file
+        var addToHomeConfig = {
+            touchIcon: true
+        };
+	</script>
+	<script type="text/javascript">
+      var count1 = 0;
+      var button1 = document.getElementById("countButton1");
+      var display1 = document.getElementById("displayCount1");
+
+      button1.onclick = function(){
+        count1++;
+        display1.innerHTML = count1;
+      }
+	</script>
+	<script type="text/javascript">
+		var count2 = 0;
+		var button2 = document.getElementById("countButton2");
+		var display2 = document.getElementById("displayCount2");
+  
+		button2.onclick = function(){
+		  count2++;
+		  display2.innerHTML = count2;
+		}
+	  </script>
+	   <script type="text/javascript">
+		var count3 = 0;
+		var button3 = document.getElementById("countButton3");
+		var display3 = document.getElementById("displayCount3");
+  
+		button3.onclick = function(){
+		  count3++;
+		  display3.innerHTML = count3;
+		}
+	  </script>
+	      <script type="text/javascript">
+			var count4 = 0;
+			var button4 = document.getElementById("countButton4");
+			var display4 = document.getElementById("displayCount4");
+	  
+			button4.onclick = function(){
+			  count4++;
+			  display4.innerHTML = count4;
+			}
+		  </script>
+		  <script type="text/javascript">
+			function vote() {
+			var x = document.getElementById("counter");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+			}
+		</script>
+    <script src="js-add2home.js"></script>
+    <script src="js-main.js"></script>
+</body>
+
+</html>

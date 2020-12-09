@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+<!--Change spacing on white bar-->
+<!--Alignment on results page should be left aligned-->
+<head>
+	<title>BVoter</title>
+	<!-- META -->
+	<meta charset="utf-8">
+	<!-- no pinch and zoom, width is set to initial width-->
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0">
+	<!--Lets safari know that this page is web app capable on iOS Safari -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!--Make the status bar black-->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!--Sets the title of the app when added to home screen -->
+	<meta name="apple-mobile-web-app-title" content="BVoter">
+	<!--Disable Auto Phone Number Detection -->
+	<meta name="format-detection" content="telephone=no">
+	<!-- CSS -->
+	<link rel="stylesheet" href="css-normalize.css">
+    <link rel="stylesheet" href="css-add2home.css">
+    <link rel="stylesheet" href="css-main.css">
+	<link rel="apple-touch-icon" href="img/hourglassicon.png">
+</head>
+
+<body>
+	<!-- PAGE CONTENT -->
+	<div id="content">
+		<div id="face"></div>
+		<header>
+			BVOTER
+		</header>
+		<div id=buttons>
+			<div id="voting">
+			<input type="button" value="Option One" id="countButton1" />
+			<input type="button" value="Option Two" id="countButton2" />
+			<input type="button" value="Option Three" id="countButton3" />
+			<input type="button" value="Option Four" id="countButton4" />
+
+			<div id="space"></div>
+		</div>
+			<input type="button" id="vote" value="View Results"onclick="vote();buttonhide();namechange();">
+			<div id="counter">
+				<p>Option One got <span id="displayCount1">0</span> votes.</p>
+				<p>Option Two got <span id="displayCount2">0</span> votes.</p>
+				<p>Option Three got <span id="displayCount3">0</span> votes.</p>
+				<p>Option Four got <span id="displayCount4">0</span> votes.</p>
+			</div>
+		</div>
+	</div>
+	<!-- JAVASCRIPT-->
+	<script src="js-refresh-manifest.js" type="text/javascript"></script>
+	<script type="text/javascript">
+        // custom config settings before loading add2home.js file
+        var addToHomeConfig = {
+            touchIcon: true
+        };
+	</script>
+
+    <script src="js-add2home.js"></script>
+    <script src="js-main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+CACHE MANIFEST
+# version - 5.0
+
+CACHE:
+
+# CSS
+css-add2home.css
+css-main.css
+css-normalize.css
+
+# IMAGES
+img\axeicon.png
+img\hourglassbackground.png
+img\hourglassicon.png
+img\tree2.png
+img\tree4.svg
+
+# HTML FILES
+index.html
+
+# JAVASCRIPT - SPECIFIC ORDER
+js-refresh-manifest.js
+js-add2home.js
+js-main.js
+
+## Any resources not listed above will require the user to be online.
+NETWORK:
+*

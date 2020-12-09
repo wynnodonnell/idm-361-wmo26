@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Increment count when button is clicked</title>
+  </head>
+
+  <body>
+    <input type="button" value="Count" id="countButton1" />
+
+    <p>The button was pressed <span id="displayCount1">0</span> times.</p>
+
+    <script type="text/javascript">
+      var count1 = 0;
+      var button1 = document.getElementById("countButton1");
+      var display1 = document.getElementById("displayCount1");
+
+      button1.onclick = function(){
+        count1++;
+        display1.innerHTML = count1;
+      }
+    </script>
+        <input type="button" value="Count" id="countButton2" />
+
+        <p>The button was pressed <span id="displayCount2">0</span> times.</p>
+    
+        <script type="text/javascript">
+          var count2 = 0;
+          var button2 = document.getElementById("countButton2");
+          var display2 = document.getElementById("displayCount2");
+    
+          button2.onclick = function(){
+            count2++;
+            display2.innerHTML = count2;
+          }
+        </script>
+            <input type="button" value="Count" id="countButton3" />
+
+            <p>The button was pressed <span id="displayCount3">0</span> times.</p>
+        
+            <script type="text/javascript">
+              var count3 = 0;
+              var button3 = document.getElementById("countButton3");
+              var display3 = document.getElementById("displayCount3");
+        
+              button3.onclick = function(){
+                count3++;
+                display3.innerHTML = count3;
+              }
+            </script>
+    <input type="button" value="Count" id="countButton4" />
+
+    <p>The button was pressed <span id="displayCount4">0</span> times.</p>
+
+    <script type="text/javascript">
+      var count4 = 0;
+      var button4 = document.getElementById("countButton4");
+      var display4 = document.getElementById("displayCount4");
+
+      button4.onclick = function(){
+        count4++;
+        display4.innerHTML = count4;
+      }
+    </script>
+  </body>
+</html>
